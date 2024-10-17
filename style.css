@@ -441,10 +441,9 @@ i{
 }
 .pricing-content{
     display: grid;
-    height: 100%;
     grid-template-columns: repeat(auto-fit,minmax(350px,auto));
     align-items: center;
-    gap: 1.3rem;
+    gap: 1.2rem;
   
 }
 .rows{
@@ -493,4 +492,11 @@ i{
     border: 1px solid var(--main-color);
     transform: translateY(-5px)scale(1.04);
     cursor: pointer;
+}
+.team-members{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.1rem;
 }
