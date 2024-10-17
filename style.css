@@ -330,8 +330,8 @@ i{
 .heading{
     color: var(--main-color);
     font-weight: 700;
-    text-align: justify;
-    font-size: 6.5rem;
+    text-align: center;
+    font-size: 6rem;
 }
 .list-btn{
     display: inline-block;
@@ -350,4 +350,87 @@ i{
     background: var(--main-color);
     color: var(--text-color);
     box-shadow: 0 0 18px var(--main-color);
+}
+.schedule-container {
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    padding: 20px;
+    background:var(--bg-color);
+    color:var(--text-color)
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #333333;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+  td{
+    cursor: pointer;
+  }
+  th {
+    background-color: #222222;
+  }
+  th:hover{
+    background-color:#111;
+  }
+  td:hover{
+    background-color:#2d3436;
+  }
+  button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:#0984e3;
+  }
+  .banner {
+    background-image: url("Media/banner.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff; 
+  }
+  
+  .content {
+    text-align: center;
+    padding: 30px;
+  }
+  .content h2{
+    font-size: 20px;
+  }
+  .content h1{
+    font-size: 60px;
+  }
+  .content p{
+    font-size: 15px;
+    font-weight: bolder;
+  }
+.banner-btn{
+    color:#192a56;
+    background-color: var(--text-color);
+    font-weight: 800;
+    border-radius: 25px;
+}
+.banner-btn:hover{
+    background: #74b9ff;
 }
