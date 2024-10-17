@@ -410,14 +410,19 @@ i{
     align-items: center;
     color: #ffffff; 
   }
+  .banner:hover{
+    transform:scale(0.94);
+  }
   
   .content {
     text-align: center;
     padding: 30px;
+
   }
   .content h2{
     font-size: 20px;
   }
+  
   .content h1{
     font-size: 60px;
   }
@@ -428,9 +433,64 @@ i{
 .banner-btn{
     color:#192a56;
     background-color: var(--text-color);
-    font-weight: 800;
+    font-weight: 900;
     border-radius: 25px;
 }
 .banner-btn:hover{
     background: #74b9ff;
+}
+.pricing-content{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    align-items: center;
+    gap: 1.3rem;
+  
+}
+.rows{
+    background-color:#487eb0;
+    border-radius: 27px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px var(--snd-bg-color);
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+.rows h3{
+    font-size: 30px;
+    text-align: center;
+}
+.rows h1{
+    font-size: 20px;
+    text-align: center;
+    color: var(--bg-color);
+    font-weight: 800;
+}
+.rows h2{
+    font-size: 20px;
+    text-align: center;
+    color: var(--bg-color);
+    font-weight: 700;
+}
+.rows ul{
+    text-align: justify;
+
+}
+.rows li{
+    color: var(--bg-color);
+    font-weight: 600;
+    font-size: 15px;
+    text-align: justify;
+}
+.list-btn{
+    color: var(--text-color);
+    background-color: var(--bg-color);
+
+}
+.list-btn:hover{
+    background-color: #2d3436;
+}
+.rows:hover{
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px)scale(1.04);
+    cursor: pointer;
 }
