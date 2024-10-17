@@ -14,7 +14,7 @@
     --bg-color:#000;
     --snd-bg-color:#111;
     --text-color:#fff;
-    --main-color:#4834d4;
+    --main-color:#2980b9;
 }
 html{
     font-size: 62.5%;
@@ -199,4 +199,94 @@ span{
     clip-path: circle(150% at 0 50%);
     transition: 2s ease;
     transition-property: clip-path;
+}
+.card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section {
+    text-align: center;
+    padding: 20px;
+}
+.section i{
+    font-size: 30px;
+    color: var(--main-color);
+}
+.section i:hover{
+    color: var(--text-color);
+}
+.section h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--main-color);
+    font-weight:bold;
+}
+
+.section p {
+    font-size: 14px;
+}
+.card{
+    width: 35rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: transparent;
+    color:var(--text-color);
+    border: 2px solid var(--text-color);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.card:hover{
+    color: var(--text-color);
+    box-shadow: 0 0 18px var(--main-color);
+    transform: translateY(-10px);
+}
+.Home-img{
+    float: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 100vh;
+    transition: transform 0.5s ease-in-out;
+    margin: 50px;
+
+}
+.Home-img:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+.home-content h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+
+}
+.home-card{
+    width: fit-content;
+    display: flex;
+    flex-direction:column;
+    margin-left: 400px;
+    padding: 1rem 2.8rem;
+    background: transparent;
+    color:var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: tansform 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: left;
+}
+.home-card p{
+    margin: 0 10px;
+    transition: transform 0.5s ease-in-out;
+}
+.home-card p:hover{
+    transform: scale3d(1)
+}
+.home-card:hover{
+    transform: scale(1.15);
+    
+}
+i{
+    font-size: 30px;
+    color: var(--main-color);
 }
