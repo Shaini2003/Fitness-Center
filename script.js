@@ -16,13 +16,13 @@ var sliderNav =function(manual){
     btns[manual].classList.add("active");
     slides[manual].classList.add("active");
 }
-//code for Review section
+
 btns.forEach((btn,i) =>{
     btn.addEventListener("click", () =>{
         sliderNav(i);
     })
 })
-
+//code for Review section
 const swiper = new Swiper(".mySwiper", {
     slidesPerView:3,
     spaceBetween:30,
