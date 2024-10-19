@@ -596,4 +596,13 @@ i{
     border-radius: 27px;
     margin-bottom: 1.4rem;
 }
+.blog-i{
+    display: inline;
 
+}
+.blog-i i{
+    font-size: 15px;
+}
+.section i{
+    font-size: 18px;
+}
