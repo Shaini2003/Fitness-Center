@@ -537,6 +537,15 @@ i{
     margin-top: 50px;
     text-align: center;
 }
+.head{
+    color: var(--main-color);
+    font-weight: 700;
+    text-align: center;
+    font-size: 6rem;
+}
+.head:hover{
+    transform: scale(0.9);
+}
 .about-img{
     float: left;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -544,6 +553,9 @@ i{
     margin: 50px;
 
 }
+.about-img:hover{
+    transform: scale(1.2);
+   }
 
 .about-content .head{
     font-size: 4.5rem;
@@ -556,6 +568,7 @@ i{
 .about-content p{
     font-size: 1.6rem;
     margin: 2rem 0 2rem;
+    text-align: justify;
 }
 .about-content h2{
     text-align: right;
