@@ -16,6 +16,7 @@ var sliderNav =function(manual){
     btns[manual].classList.add("active");
     slides[manual].classList.add("active");
 }
+//code for Review section
 btns.forEach((btn,i) =>{
     btn.addEventListener("click", () =>{
         sliderNav(i);
@@ -39,9 +40,10 @@ const swiper = new Swiper(".mySwiper", {
         clickable:true,
     },
   
-    // Navigation arrows
+    //Review Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   });
+  
