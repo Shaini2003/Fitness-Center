@@ -23,7 +23,7 @@
                 <input type="password" id="password" name="password" placeholder="Password">
                 <p style="font-weight: bolder;font-size: 18px;">Forget Password?</p><center>
                 
-                    <a href="" class="button">LOGIN</a></center></div>
+                <button name="submit" type="submit"class="button">LOGIN</button></center></div>
             </form>
         
             <p style="font-weight: bolder;">Don't have an account? &nbsp;<a href="createAccount.php" style="color:black;font-weight: bold;">Sign Up</a></p>

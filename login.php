@@ -32,7 +32,7 @@
                         <a href="admin.php" class="staff">Continue as Admin</a>
                         <a href="staff.php" class="staff">Continue as a Staff Member</a>
                         <a href="#" class="staff">Login with Google</a>
-                        <a href="" class="button">LOGIN</a></center>
+                        <button name="submit" type="submit"class="button">LOGIN</button></center>
                 </div>
             </form>
         

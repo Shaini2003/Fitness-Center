@@ -15,7 +15,7 @@
         <div class="login-form">
 
             <h1 style="text-align: center;font-weight:700;">Create a Account</h1>
-            <form action ="includes/signup.inc.php" method="post">
+            <form action="includes/signup.inc.php" method="post">
                 <label for="name" style="font-size: 18px;text-align: left;">Name:</label><select style="width: 10%;
                     padding: 8px;
                     border: 1px solid #ccc;
@@ -33,16 +33,16 @@
                 <input type="password" id="password" name="password" style="width: 90%;" placeholder="Password">
                 <label for="confirm-password" style="font-size: 18px;text-align: left;">Confirm Password:</label>
                 <input type="password" id="confirm-password" name="confirm-password" style="width: 90%;" placeholder="Repeat Password">
+                <center>
+                <button name="submit" type="submit" style="color: white;" class="button">Register</button>
+                <p style="font-weight: bolder;">Already have an account? &nbsp;<a href="Login.php" style="color:black;font-weight: bold; text-decoration: none;">Login</a></p>
 
+            </center>
 
 
             </form>
 
-            <center>
-                <button type="submit" style="color: white;font-size: 20px;" class="button">SAVE</button>
-                <p style="font-weight: bolder;">Already have an account? &nbsp;<a href="login.php" style="color:black;font-weight: bold; text-decoration: none;">Login</a></p>
-                
-            </center>
+            
         </div>
     </div>
 </body>
