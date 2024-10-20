@@ -9,7 +9,7 @@
 </head>
 
 <body style="background-image: url(Media/background.jpeg);background-size: cover;background-position: center center;">
-    <a href="index.html" class="logo">Fitzone <span>Fitness </span>Center</a>
+    <a href="index.php" class="logo">Fitzone <span>Fitness </span>Center</a>
     <p style="color:#2980b9;font-weight: 700;font-size: 40px;margin-top: 1px;text-align: center;">Become a member</p>
     <div class="container">
         <div class="login-form">
@@ -40,7 +40,7 @@
 
             <center>
                 <button type="submit" style="color: white;font-size: 20px;" class="button">SAVE</button>
-                <p style="font-weight: bolder;">Already have an account? &nbsp;<a href="login.html" style="color:black;font-weight: bold; text-decoration: none;">Login</a></p>
+                <p style="font-weight: bolder;">Already have an account? &nbsp;<a href="login.php" style="color:black;font-weight: bold; text-decoration: none;">Login</a></p>
                 
             </center>
         </div>

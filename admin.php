@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="staff.css">
 
 </head>
 <body style="background-image: url(Media/background.jpeg);background-size:cover;background-position: center center;">
-    <a href="index.html" class="logo">Fitzone <span>Fitness </span>Center</a>
+    <a href="index.php" class="logo">Fitzone <span>Fitness </span>Center</a>
 
-    <p style="color:#2980b9;font-weight: 900;font-size: 40px;">Elevate your fitness</p><br><br><br>
+    <p style="color:#2980b9;font-weight: 900;font-size: 40px;">Elevate your fitness</p><br><br><br><br>
     <div class="container">
         <div class="login-form">
             
@@ -22,12 +22,11 @@
                 <label for="password" style="font-size: 18px;text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
                 <input type="password" id="password" name="password" placeholder="Password">
                 <p style="font-weight: bolder;font-size: 18px;">Forget Password?</p><center>
-                <button>Continue as Guest</button>
-                <button>Login with Google</button>
-                <button name="submit" type="submit"class="button">LOGIN</button></center></div>
+                
+                    <a href="" class="button">LOGIN</a></center></div>
             </form>
         
-            <p style="font-weight: bolder;">Don't have an account? &nbsp;<a href="createAccount.html" style="color:black;font-weight: bold;">Sign Up</a></p>
+            <p style="font-weight: bolder;">Don't have an account? &nbsp;<a href="createAccount.php" style="color:black;font-weight: bold;">Sign Up</a></p>
         </div>
     </div>
 

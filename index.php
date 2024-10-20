@@ -24,7 +24,7 @@
         </ul>
 
         <div class="top-btn">
-            <a href="login.html" class="nav-btn">LOGIN</a>
+            <a href="login.php" class="nav-btn">LOGIN</a>
         </div>
 
     </header>
@@ -156,7 +156,7 @@
                     enjoy the environment you're in because that's what will ultimately keep you consistent. Lifestyle
                     Fitness is like a loving second home!</p>
 
-                <a href="classes.html" class="about-btn">Book a Class</a>
+                <a href="classes.php" class="about-btn">Book a Class</a>
             </div>
         </section>
     </center>
@@ -222,7 +222,7 @@
                     <td>Jenny Wilson<br>9:00 AM - 11:00 AM</td>
                     <td></td>
                     <td>Jenny Wilson<br>9:00 AM - 11:00 AM</td>
-                    <td><a href="classes.html" class="join-btn">Join Now</a></td>
+                    <td><a href="classes.php" class="join-btn">Join Now</a></td>
                 </tr>
                 <tr>
                     <td style="font-weight: bolder;">CARDIO BURN</td>
@@ -232,7 +232,7 @@
                     <td></td>
                     <td>Albert Flores<br>9.00 AM - 11.00 AM</td>
                     <td>Albert Flores<br>9.00 AM - 11.00 AM</td>
-                    <td><a href="classes.html" class="join-btn">Join Now</a></td>
+                    <td><a href="classes.php" class="join-btn">Join Now</a></td>
                 </tr>
                 <tr>
                     <td style="font-weight: bolder;">CROSS FIT</td>
@@ -242,7 +242,7 @@
                     <td>Floyd Miles<br>9.00 AM - 11.00 AM</td>
                     <td></td>
                     <td>Floyd Miles<br>9.00 AM - 11.00 AM</td>
-                    <td><a href="classes.html" class="join-btn">Join Now</a></td>
+                    <td><a href="classes.php" class="join-btn">Join Now</a></td>
                 </tr>
                 <tr>
                     <td style="font-weight: bolder;">YOGA</td>
@@ -252,7 +252,7 @@
                     <td>Annette Black<br>9.00 AM - 11.00 AM</td>
                     <td></td>
                     <td>Annette Black<br>9.00 AM - 11.00 AM</td>
-                    <td><a href="classes.html" class="join-btn">Join Now</a></td>
+                    <td><a href="classes.php" class="join-btn">Join Now</a></td>
 
                 </tr>
                 <tr>
@@ -263,7 +263,7 @@
                     <td>Floyd Miles<br>9.00 AM - 11.00 AM</td>
                     <td>Floyd Miles<br>9.00 AM - 11.00 AM</td>
                     <td></td>
-                    <td><a href="classes.html" class="join-btn">Join Now</a></td>
+                    <td><a href="classes.php" class="join-btn">Join Now</a></td>
 
                 </tr>
                 <tr>
@@ -274,7 +274,7 @@
                     <td></td>
                     <td>Jacob Jones<br>9.00 AM - 11.00 AM</td>
                     <td>Jacob Jones<br>9.00 AM - 11.00 AM</td>
-                    <td><a href="classes.html" class="join-btn">Join Now</a></td>
+                    <td><a href="classes.php" class="join-btn">Join Now</a></td>
                 </tr>
             </tbody>
         </table>
@@ -285,13 +285,13 @@
             <h2>MEET THE TRAINERS</h2>
             <h1>BOOK CLASS</h1>
             <p>Know About Special Offer And New Training</p><br>
-            <a href="classes.html" class="banner-btn">Join Now</a>
+            <a href="classes.php" class="banner-btn">Join Now</a>
         </div>
         <div class="content">
             <h2>COME TRAIN WITH US</h2>
             <h1>30% OFF</h1>
             <p>This Offer Is For A Limited Time Only</p><br>
-            <a href="classes.html" class="banner-btn">Join Now</a>
+            <a href="classes.php" class="banner-btn">Join Now</a>
         </div>
     </div>
 <!---Code for pricing packages-->
@@ -311,7 +311,7 @@
                     <li>● Months in the mouth</li>
                     <li>● There is no time limit</li>
                 </ul>
-                <center><a href="payment.html" class="member-btn">JOIN NOW</a></center>
+                <center><a href="payment.php" class="member-btn">JOIN NOW</a></center>
             </div>
 
             <div class="rows">
@@ -326,7 +326,7 @@
                     <li>● Months in the mouth</li>
                     <li>● There is no time limit</li>
                 </ul>
-                <center><a href="payment.html" class="member-btn">JOIN NOW</a></center>
+                <center><a href="payment.php" class="member-btn">JOIN NOW</a></center>
             </div>
             <div class="rows">
                 <h3>12 Month unlimited</h3>
@@ -340,7 +340,7 @@
                     <li>● Months in the mouth</li>
                     <li>● There is no time limit</li>
                 </ul>
-                <center><a href="payment.html" class="member-btn">JOIN NOW</a></center>
+                <center><a href="payment.php" class="member-btn">JOIN NOW</a></center>
             </div>
 <!---Code for membership plans-->
             <div class="rows">

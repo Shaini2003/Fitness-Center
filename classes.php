@@ -21,73 +21,73 @@
                 <img src="Media/cardio class.webp" alt="Fitness programs">
                 <h4>Cardio Class &nbsp;&nbsp;<i class="fa-solid fa-dumbbell"style=" color:#74b9ff"></i></h4>
                 <p style="font-size: 18px;color:#2980b9;font-weight: 800;text-align: center;">Rs.3000/=</p>
-                <center><a href="payment.html" class="list-btn">Buy Now</a></center>
+                <center><a href="payment.php" class="list-btn">Buy Now</a></center>
             </div>
             <div class="row">
                 <img src="Media/body building class.webp" alt="Fitness programs">
                 <h4>Body Building Class &nbsp;&nbsp;<i class="fa-solid fa-dumbbell"style=" color:#74b9ff"></i></h4>
                 <p style="font-size: 18px;color:#2980b9;font-weight: 800;text-align: center;">Rs.3000/=</p>
-                <center><a href="payment.html" class="list-btn">Buy Now</a></center>
+                <center><a href="payment.php" class="list-btn">Buy Now</a></center>
             </div>
             <div class="row">
                 <img src="Media/gym workout.webp" alt="Fitness programs">
                 <h4>Gym Workout Class &nbsp;&nbsp;<i class="fa-solid fa-dumbbell"style=" color:#74b9ff"></i></h4>
                 <p style="font-size: 18px;color:#2980b9;font-weight: 800;text-align: center;">Rs.2000/=</p>
-                <center><a href="payment.html" class="list-btn">Buy Now</a></center>
+                <center><a href="payment.php" class="list-btn">Buy Now</a></center>
             </div>
             <div class="row">
                 <img src="Media/cross fit.webp" alt="Fitness programs">
                 <h4>Cross Fit Class &nbsp;&nbsp;<i class="fa-solid fa-dumbbell"style=" color:#74b9ff"></i></h4>
                 <p style="font-size: 18px;color:#2980b9;font-weight: 800;text-align: center;">Rs.2000/=</p>
-                <center><a href="payment.html" class="list-btn">Buy Now</a></center>
+                <center><a href="payment.php" class="list-btn">Buy Now</a></center>
             </div>
             <div class="row">
                 <img src="Media/zumba.webp" alt="Fitness programs">
                 <h4>Zumba Class &nbsp;&nbsp;<i class="fa-solid fa-dumbbell"style=" color:#74b9ff"></i></h4>
                 <p style="font-size: 18px;color:#2980b9;font-weight: 800;text-align: center;">Rs.2000/=</p>
-                <center><a href="payment.html" class="list-btn">Buy Now</a></center>
+                <center><a href="payment.php" class="list-btn">Buy Now</a></center>
             </div>
             <div class="row">
                 <img src="Media/yoga class.jpeg" alt="Fitness programs">
                 <h4>Yoga Class &nbsp;&nbsp;<i class="fa-solid fa-dumbbell"style=" color:#74b9ff"></i></h4>
                 <p style="font-size: 18px;color:#2980b9;font-weight: 800;text-align: center;">Rs.3000/=</p>
-                <center><a href="payment.html" class="list-btn">Buy Now</a></center>
+                <center><a href="payment.php" class="list-btn">Buy Now</a></center>
             </div>
             <div class="row">
                 <img src="Media/weight training.jpeg" alt="Fitness programs">
                 <h4>Weight training Class &nbsp;&nbsp;<i class="fa-solid fa-dumbbell"style=" color:#74b9ff"></i></h4>
                 <p style="font-size: 18px;color:#2980b9;font-weight: 800;text-align: center;">Rs.2500/=</p>
-                <center><a href="payment.html" class="list-btn">Buy Now</a></center>
+                <center><a href="payment.php" class="list-btn">Buy Now</a></center>
             </div>
             <div class="row">
                 <img src="Media/dancing class.webp" alt="Fitness programs">
                 <h4>Dancing Class &nbsp;&nbsp;<i class="fa-solid fa-dumbbell"style=" color:#74b9ff"></i></h4>
                 <p style="font-size: 18px;color:#2980b9;font-weight: 800;text-align: center;">Rs.2000/=</p>
-                <center><a href="payment.html" class="list-btn">Buy Now</a></center>
+                <center><a href="payment.php" class="list-btn">Buy Now</a></center>
             </div>
             <div class="row">
                 <img src="Media/pilate.webp" alt="Fitness programs">
                 <h4>Pilates Class &nbsp;&nbsp;<i class="fa-solid fa-dumbbell"style=" color:#74b9ff"></i></h4>
                 <p style="font-size: 18px;color:#2980b9;font-weight: 800;text-align: center;">Rs.3000/=</p>
-                <center><a href="payment.html" class="list-btn">Buy Now</a></center>
+                <center><a href="payment.php" class="list-btn">Buy Now</a></center>
             </div>
             <div class="row">
                 <img src="Media/personal.webp" alt="Fitness programs">
                 <h4>Personal Training Class &nbsp;&nbsp;<i class="fa-solid fa-dumbbell"style=" color:#74b9ff"></i></h4>
                 <p style="font-size: 18px;color:#2980b9;font-weight: 800;text-align: center;">Rs.3000/=</p>
-                <center><a href="payment.html" class="list-btn">Buy Now</a></center>
+                <center><a href="payment.php" class="list-btn">Buy Now</a></center>
             </div>
             <div class="row">
                 <img src="Media/diet.jpeg" alt="Fitness programs">
                 <h4>Diet Sessions &nbsp;&nbsp;<i class="fa-solid fa-dumbbell"style=" color:#74b9ff"></i></h4>
                 <p style="font-size: 18px;color:#2980b9;font-weight: 800;text-align: center;">Rs.1500/=</p>
-                <center><a href="payment.html" class="list-btn">Buy Now</a></center>
+                <center><a href="payment.php" class="list-btn">Buy Now</a></center>
             </div>
             <div class="row">
                 <img src="Media/exercise.webp" alt="Fitness programs">
                 <h4>Exercise Class &nbsp;&nbsp;<i class="fa-solid fa-dumbbell"style=" color:#74b9ff"></i></h4>
                 <p style="font-size: 18px;color:#2980b9;font-weight: 800;text-align: center;">Rs.1500/=</p>
-                <center><a href="payment.html" class="list-btn">Buy Now</a></center>
+                <center><a href="payment.php" class="list-btn">Buy Now</a></center>
             </div>
         </div>
     </section>
