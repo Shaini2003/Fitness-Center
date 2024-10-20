@@ -1,3 +1,7 @@
+<?php 
+  session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,11 +26,16 @@
             <li><a href="#TRAINERS">TRAINERS</a></li>
             <li><a href="#BLOG">BLOG</a></li>
         </ul>
-
-        <div class="top-btn">
-            <a href="login.php" class="nav-btn">LOGIN</a>
-        </div>
-
+<?php
+if(isset($_SESSION["username"])){
+    echo '<li style="float:right"><i class="fa-regular fa-user" style="color: #e67e22;cursor: pointer;"></i>'.$_SESSION["username"] . '</a></li>';
+    echo '<li style="float:right"><a href="includes/logout.inc.php" class="nav-btn">Logout</a></li>';
+    
+}
+else{
+    echo '<a href="login.php">Login</a>';
+}
+?>
     </header>
     <!---Code for home page video slider-->
     <section class="home" id="HOME">
