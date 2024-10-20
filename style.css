@@ -913,3 +913,17 @@ a {
     background-color: #2980b9;
     
 }
+.review-button{
+    background-color:#333333;
+    padding: 1rem 2.8rem;
+    color:var(--text-color);
+    border: 2px solid var(--text-color);
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.review-button:hover{
+    background-color: #2980b9;
+}
