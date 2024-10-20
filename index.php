@@ -28,12 +28,12 @@
         </ul>
 <?php
 if(isset($_SESSION["username"])){
-    echo '<li style="float:right"><i class="fa-regular fa-user" style="color: #e67e22;cursor: pointer;"></i>'.$_SESSION["username"] . '</a></li>';
-    echo '<li style="float:right"><a href="includes/logout.inc.php" class="nav-btn">Logout</a></li>';
+    echo '<li style="float:right;"><i class="fa-regular fa-user" style="color: #2980b9;cursor: pointer;"></i>&nbsp;'.$_SESSION["username"] . '</a></li>';
+    echo '<li style="float:right" background-color:#c0392b> <a href="includes/logout.inc.php" class="nav-btn">Logout</a></li>';
     
 }
 else{
-    echo '<a href="login.php">Login</a>';
+    echo '<a href="login.php" class="nav-btn">Login</a>';
 }
 ?>
     </header>

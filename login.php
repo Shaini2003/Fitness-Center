@@ -35,7 +35,27 @@
                         <button name="submit" type="submit"class="button">LOGIN</button></center>
                 </div>
             </form>
-        
+            <?php
+          if(isset($_GET["error"])){
+            if($_GET["error"] == 'emptyinput'){
+                echo '<div class="error">Fill in the all fields</div>';
+            } else if($_GET["error"] == 'invaliduid'){
+                echo '<div class="error">Invalid Usename</div>';
+            } 
+            else if($_GET["error"] == 'invaliemail'){
+                echo '<div class="error">Invalid Email</div>';
+            } 
+            else if($_GET["error"] == 'passworddontmatch'){
+                echo '<div class="error">Password not matching</div>';
+            } 
+            else if($_GET["error"] == 'stmtfailed'){
+                echo '<div class="error">Something Went Wrong</div>';
+            } 
+            else if($_GET["error"] == 'none'){
+                echo '<div class="error">Account Created</div>';
+            } 
+          }
+          ?>
         <p style="font-weight: bolder;">Don't have an account? &nbsp;<a href="createAccount.php"
                 style="color:black;font-weight: bold;">Sign Up</a></p>
     </div>

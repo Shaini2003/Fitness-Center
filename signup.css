@@ -15,6 +15,13 @@ nav ul {
     height: 70vh;
    
 }
+.error{
+    color: red;
+    border: 1px solid red;
+    padding: 12px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
 a{
     text-decoration: none;
 }

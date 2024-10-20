@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="signUp.css">
+    <link rel="stylesheet" href="signup.css">
 </head>
 
 <body style="background-image: url(Media/background.jpeg);background-size: cover;background-position: center center;">
@@ -41,10 +41,31 @@
 
 
             </form>
-
-            
+          <?php
+          if(isset($_GET["error"])){
+            if($_GET["error"] == 'emptyinput'){
+                echo '<div class="error">Fill in the all fields</div>';
+            } else if($_GET["error"] == 'invaliduid'){
+                echo '<div class="error" style=" color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Invalid Usename</div>';
+            } 
+            else if($_GET["error"] == 'invaliemail'){
+                echo '<div class="error"style="color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Invalid Email</div>';
+            } 
+            else if($_GET["error"] == 'passworddontmatch'){
+                echo '<div class="error"style="color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Password not matching</div>';
+            } 
+            else if($_GET["error"] == 'stmtfailed'){
+                echo '<div class="error"style="color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Something Went Wrong</div>';
+            } 
+            else if($_GET["error"] == 'none'){
+                echo '<div class="error"style="color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Account Created</div>';
+            } 
+          }
+          ?>
+        
         </div>
     </div>
+
 </body>
 
 </html>
