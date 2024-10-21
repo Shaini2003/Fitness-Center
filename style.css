@@ -89,7 +89,11 @@ span{
     color: var(--text-color);
     box-shadow: 0 0 18px var(--main-color);
 }
+.logout-btn{
+    background-color: red;
+    padding: 1rem 2.8rem;
 
+}
 .home-btn{
     display: inline-block;
     padding: 1rem 2.8rem;

@@ -41,6 +41,7 @@ nav a {
 }
 
 .login-form {
+    
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -49,7 +50,6 @@ nav a {
     padding: 40px;
     background-color: rgba(255, 255, 225, 0.2);
     align-items: center;
-    
     
 }
 
@@ -100,7 +100,7 @@ p {
 }
 
 a {
-    color: #c0392b;
+    color: #2980b9;
     text-decoration: none;
 }
 .button{
@@ -114,11 +114,11 @@ a {
     text-align: center;
     width: 50%;
     border-radius:5px;
-    background-color:red;
+    background-color:#2980b9;
     color: white;
     font-size: 18px;
     
 }
 .button:hover{
-    background-color: #c0392b;
+    background-color:#062a41;
 }

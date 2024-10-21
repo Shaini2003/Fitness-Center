@@ -24,12 +24,12 @@
             <li><a href="#ABOUTUS">ABOUT US</a></li>
             <li><a href="#PRICING">PRICING</a></li>
             <li><a href="#TRAINERS">TRAINERS</a></li>
-            <li><a href="#BLOG">BLOG</a></li>
+            <li><a href="#BLOG">BLOG</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </ul>
-<?php
+        <?php
 if(isset($_SESSION["username"])){
-    echo '<li style="float:right;"><i class="fa-regular fa-user" style="color: #2980b9;cursor: pointer;"></i>&nbsp;'.$_SESSION["username"] . '</a></li>';
-    echo '<li style="float:right" background-color:#c0392b> <a href="includes/logout.inc.php" class="nav-btn">Logout</a></li>';
+    echo '<h1 style="float:right;"><i class="fa-regular fa-user" style="color: #2980b9;cursor: pointer;"></i>&nbsp;'.$_SESSION["username"] . '</a></h1>';
+    echo '<h1 style="float:right;color:black;background-color:red;padding: 1rem 2rem; border-radius: 1rem;" > <a href="includes/logout.inc.php" class="logout-btn">Logout</a></h1>';
     
 }
 else{
@@ -37,6 +37,7 @@ else{
 }
 ?>
     </header>
+    
     <!---Code for home page video slider-->
     <section class="home" id="HOME">
         <video class="slide active" src="Media/a_Cinematic_Fitness_Video...SONY_FX6(1080p).mp4" autoplay muted
