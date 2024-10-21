@@ -1,6 +1,6 @@
 <?php
-function emptyInputSignup($name,$phone,$email,$pwd,$pwdRepeat){
-    if(empty($name) || empty($phone) || empty($email) || empty($pwd) || empty($pwdRepeat)) {
+function emptyInputSignup($name,$phone,$email,$pwd,$pwdRepeat,$userType){
+    if(empty($name) || empty($phone) || empty($email) || empty($pwd) || empty($pwdRepeat) || empty($userType)) {
         $result =true;
     }
     else{
@@ -57,6 +57,16 @@ function pwdMatch($pwd , $pwdRepeat){
     return $result;
 
 }
+function invalidType($userType){
+    if(!preg_match("/^[a-zA-Z0-9]*$/",$userType)){
+        $result=true;
+    }
+    else{
+        $result=false;
+    }
+    return $result;
+
+}
 function uidExists($conn,$name,$email){
     $sql= "SELECT*FROM users WHERE usersEmail= ? OR usersName= ?;";
     $stmt =mysqli_stmt_init($conn);
@@ -77,15 +87,15 @@ function uidExists($conn,$name,$email){
     
 
 }
-function createUser($conn,$name,$phone,$email,$pwd){
-    $sql = "INSERT INTO users (usersName,usersPhone,usersEmail,usersPwd) VALUES (?,?,?,?);";
+function createUser($conn,$name,$phone,$email,$pwd,$userType){
+    $sql = "INSERT INTO users (usersName,usersPhone,usersEmail,usersPwd,userType) VALUES (?,?,?,?,?);";
     $stmt =mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt,$sql)){
         header("Location:../createAccount.php?error=stmtfailed");
         exit();
     }
     $hashedPwd = password_hash($pwd,PASSWORD_DEFAULT);
-    mysqli_stmt_bind_param($stmt,"ssss",$name,$phone,$email,$hashedPwd);
+    mysqli_stmt_bind_param($stmt,"sssss",$name,$phone,$email,$hashedPwd,$userType);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     header("Location:../login.php?error=none");

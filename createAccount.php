@@ -33,36 +33,34 @@
                 <input type="password" id="password" name="password" style="width: 90%;" placeholder="Password">
                 <label for="confirm-password" style="font-size: 18px;text-align: left;">Confirm Password:</label>
                 <input type="password" id="confirm-password" name="confirm-password" style="width: 90%;" placeholder="Repeat Password">
+                <label for="type" style="font-size: 18px;text-align: left;">User Type:</label>
+                <input type="text" id="type" name="type" placeholder="User Type">
                 <center>
-                <button name="submit" type="submit" style="color: white;" class="button">Register</button>
-                <p style="font-weight: bolder;">Already have an account? &nbsp;<a href="Login.php" style="color:black;font-weight: bold; text-decoration: none;">Login</a></p>
+                    <button name="submit" type="submit" style="color: white;" class="button">Register</button>
+                    <p style="font-weight: bolder;">Already have an account? &nbsp;<a href="Login.php" style="color:black;font-weight: bold; text-decoration: none;">Login</a></p>
 
-            </center>
+                </center>
 
 
             </form>
-          <?php
-          if(isset($_GET["error"])){
-            if($_GET["error"] == 'emptyinput'){
-                echo '<div class="error">Fill in the all fields</div>';
-            } else if($_GET["error"] == 'invaliduid'){
-                echo '<div class="error" style=" color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Invalid Usename</div>';
-            } 
-            else if($_GET["error"] == 'invaliemail'){
-                echo '<div class="error"style="color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Invalid Email</div>';
-            } 
-            else if($_GET["error"] == 'passworddontmatch'){
-                echo '<div class="error"style="color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Password not matching</div>';
-            } 
-            else if($_GET["error"] == 'stmtfailed'){
-                echo '<div class="error"style="color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Something Went Wrong</div>';
-            } 
-            else if($_GET["error"] == 'none'){
-                echo '<div class="error"style="color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Account Created</div>';
-            } 
-          }
-          ?>
-        
+            <?php
+            if (isset($_GET["error"])) {
+                if ($_GET["error"] == 'emptyinput') {
+                    echo '<div class="error">Fill in the all fields</div>';
+                } else if ($_GET["error"] == 'invaliduid') {
+                    echo '<div class="error" style=" color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Invalid Usename</div>';
+                } else if ($_GET["error"] == 'invaliemail') {
+                    echo '<div class="error"style="color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Invalid Email</div>';
+                } else if ($_GET["error"] == 'passworddontmatch') {
+                    echo '<div class="error"style="color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Password not matching</div>';
+                } else if ($_GET["error"] == 'stmtfailed') {
+                    echo '<div class="error"style="color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Something Went Wrong</div>';
+                } else if ($_GET["error"] == 'none') {
+                    echo '<div class="error"style="color: red;border: 1px solid red;padding: 12px;font-size: 22px;margin-bottom: 10px;">Account Created</div>';
+                }
+            }
+            ?>
+
         </div>
     </div>
 

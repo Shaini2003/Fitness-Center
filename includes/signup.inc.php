@@ -5,16 +5,18 @@ if(isset($_POST["submit"])){
     $email = $_POST["email"];
     $pwd = $_POST["password"];
     $pwdRepeat =$_POST["confirm-password"];
+    $userType =$_POST["type"];
 
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
 
-    $emptyInput =emptyInputSignup($name,$phone,$email,$pwd,$pwdRepeat);
+    $emptyInput =emptyInputSignup($name,$phone,$email,$pwd,$pwdRepeat,$userType);
     $invalidUid = invalidUid($email);
     $invalidName = invalidName($name);
     $invalidEmail=invalidEmail($email);
     $invalidPhone =invalidPhone($phone);
     $pwdMatch = pwdMatch($pwd , $pwdRepeat);
+    $invalidUserType = invalidType($userType);
     $uidExists =uidExists($conn,$name,$email);
 
     if ($emptyInput !== false){
@@ -42,11 +44,15 @@ if(isset($_POST["submit"])){
         header("Location:../createAccount.php?error=passwordsdontmatch");
         exit();
     }
+    if($invalidUserType !== false){
+        header("Location:../createAccount.php?error=invaliduserType");
+        exit();
+    }
     if ($uidExists !== false){
         header("Location:../createAccount.php?error=emailtaken");
         exit();
     }
-createUser($conn,$name,$phone,$email,$pwd);
+createUser($conn,$name,$phone,$email,$pwd,$userType);
 
 }
 else{
