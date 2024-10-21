@@ -47,3 +47,7 @@ const swiper = new Swiper(".mySwiper", {
     },
   });
   
+let subMenu =document.getElementById("subMenu");
+function toggleMenu(){
+    subMenu.classList.toggle("open-menu");
+}

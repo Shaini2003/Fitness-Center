@@ -1,5 +1,5 @@
-<?php 
-  session_start();
+<?php
+session_start();
 
 ?>
 <!DOCTYPE html>
@@ -26,18 +26,25 @@
             <li><a href="#TRAINERS">TRAINERS</a></li>
             <li><a href="#BLOG">BLOG</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </ul>
-        <?php
-if(isset($_SESSION["username"])){
-    echo '<h1 style="float:right;"><i class="fa-regular fa-user" style="color: #2980b9;cursor: pointer;"></i>&nbsp;'.$_SESSION["username"] . '</a></h1>';
-    echo '<h1 style="float:right;color:black;background-color:red;padding: 1rem 2rem; border-radius: 1rem;" > <a href="includes/logout.inc.php" class="logout-btn">Logout</a></h1>';
-    
-}
-else{
-    echo '<a href="login.php" class="nav-btn">Login</a>';
-}
-?>
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        <div class="sub-menu-wrap" style="position: absolute;top: 100%;right: 10%;width: 320px;max-height: 0px;overflow: hidden;transition: max-height 0.5s;" id="subMenu">
+            <div class="sub-menu" style="background: #fff;padding: 20px;margin: 10px;">
+                <div class="user-info" style="display: flex;align-items: center;">
+                    <h2 style=" font-weight: 500;color: black;">Shaini Tharushika</h2>
+                </div>
+                <hr style="border: 0;height: 1px;width: 100%;background: #ccc;margin: 15px 0 10px;">
+                <a href="#" class="sub-menu-link" style="display: flex;align-items: center;text-decoration: none;color: #525252;margin: 12px 0;">
+                    <h1 style="width: 100%;color: black;">Log Out</h1>
+                    <span style="font-size: 22px;"></span>
+                </a>
+                <a href="#" class="sub-menu-link"style="display: flex;align-items: center;text-decoration: none;color: #525252;margin: 12px 0;">
+                    <h1 style="width: 100%;color: black;">Help & Support</h1>
+                    <span></span>
+                </a>
+            </div>
+        </div>
     </header>
-    
+
     <!---Code for home page video slider-->
     <section class="home" id="HOME">
         <video class="slide active" src="Media/a_Cinematic_Fitness_Video...SONY_FX6(1080p).mp4" autoplay muted
@@ -59,7 +66,7 @@ else{
             </div>
         </div>
 
-<!---Code for social meadia icons-->
+        <!---Code for social meadia icons-->
         <div class="media-icons">
             <a href="https://www.facebook.com/profile.php?id=100090613084158&sfnsn=wa&mibextid=RUbZ1f"><i
                     class="fa-brands fa-facebook-f"></i></a>&nbsp;&nbsp;
@@ -79,7 +86,7 @@ else{
         </div>
 
     </section>
-<!---Code for aboutus-->
+    <!---Code for aboutus-->
     <section id="ABOUTUS">
         <h2 class="heading">About <span>Us</span> </h2>
         <div class="card-container">
@@ -114,7 +121,7 @@ else{
         </div>
 
         <br><br><br><br><br>
-<!---Code for special benefits-->
+        <!---Code for special benefits-->
         <div class="home-content">
             <img src="Media/pexels-photo-416809.webp" class="Home-img">
             <div style="text-align: center;padding: 60px;">
@@ -149,7 +156,7 @@ else{
         </div>
     </section>
     <center>
-        <section class="about"id="EXPLORE">
+        <section class="about" id="EXPLORE">
             <img src="Media/about.webp" class="about-img">
 
             <div class="about-content">
@@ -170,7 +177,7 @@ else{
             </div>
         </section>
     </center>
-<!--code for services-->
+    <!--code for services-->
     <section class="services" id="SERVICES">
         <h2 class="heading">Our <span>Services</span> </h2>
         <div class="services-content">
@@ -289,7 +296,7 @@ else{
             </tbody>
         </table>
     </div>
-<!---Create banner for special promotions-->
+    <!---Create banner for special promotions-->
     <div class="banner">
         <div class="content">
             <h2>MEET THE TRAINERS</h2>
@@ -304,7 +311,7 @@ else{
             <a href="classes.php" class="banner-btn">Join Now</a>
         </div>
     </div>
-<!---Code for pricing packages-->
+    <!---Code for pricing packages-->
     <section class="PRICING" id="PRICING">
         <h4 class="heading" style="font-size: 40px;">Our <span>Plan</span> </h4>
         <h1 style="font-size: 20px;">CHOOSE YOUR PRICING & MEMBERSHIP PLAN</h1><br>
@@ -352,7 +359,7 @@ else{
                 </ul>
                 <center><a href="payment.php" class="member-btn">JOIN NOW</a></center>
             </div>
-<!---Code for membership plans-->
+            <!---Code for membership plans-->
             <div class="rows">
                 <h3>Platinum Membership</h3>
                 <img src="Media/medal-solid.svg" width="30px" height="30px" text-align="center">
@@ -504,7 +511,7 @@ else{
             </div>
         </div>
     </section>
-<!---Code for blog post section-->
+    <!---Code for blog post section-->
     <section class="blog-posts" id="BLOG">
         <h2 class="heading">Our <span>Blog</span> </h2>
         <div class="card-container">
@@ -627,7 +634,7 @@ else{
     </div>
     <center>
         <!---Create a swipe review section-->
-        <section class="sec" style="align-items:center;text-align: center;"id="REVIEWS">
+        <section class="sec" style="align-items:center;text-align: center;" id="REVIEWS">
 
             <div class="swiper mySwiper contain">
                 <h2 style="font-size: 40px;color: #2980b9;font-weight: 700;">Customer Reviews</h2>
@@ -696,7 +703,7 @@ else{
                             </div>
                             <div class="name-profession">
                                 <span class="name">Dinitha Hansaja</span>
-                             
+
                             </div>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -723,7 +730,7 @@ else{
                             </div>
                             <div class="name-profession">
                                 <span class="name">Lithumsa Minduni</span>
-                               
+
                             </div>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -750,7 +757,7 @@ else{
                             </div>
                             <div class="name-profession">
                                 <span class="name">Chaminda Sudusinghe</span>
-                               
+
                             </div>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -774,11 +781,11 @@ else{
                             <div class="media-iconn">
                                 <i class="fa-brands fa-facebook"></i>
                                 <i class="fab fa-instagram"></i>
-                                
+
                             </div>
                             <div class="name-profession">
                                 <span class="name">Shanudi Vihansa</span>
-                             
+
                             </div>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -808,17 +815,18 @@ else{
     <div class="submit-banner">
         <form class="submit-content">
             <center>
-            <h2 style="font-size: 20px;">Sign Up for email and</h2>
-            <h1 style="font-size: 40px;">Get in on all the action</h1>
-            <input type="text" class="dash-input"  placeholder="Enter Your Email"><br><br> 
-            <button class="submit-btn">SUBMIT</button></center>
+                <h2 style="font-size: 20px;">Sign Up for email and</h2>
+                <h1 style="font-size: 40px;">Get in on all the action</h1>
+                <input type="text" class="dash-input" placeholder="Enter Your Email"><br><br>
+                <button class="submit-btn">SUBMIT</button>
+            </center>
         </form>
-    
+
     </div>
     <!---Create a footer-->
     <footer>
         <div class="footer-container">
-            
+
             <div class="useful-links">
                 <h3 style="font-size: 19px;font-weight: 600;">Useful Link</h3><br>
                 <ul>
@@ -840,12 +848,12 @@ else{
             <div class="contact">
                 <h3 style="font-size: 19px;font-weight: 600;">Contact</h3><br>
                 <ul>
-                    <li>Phone:  0713514360</li>
-                    <li>Phone:  0705514360</li>
-                    <li>Email:  shinitharushika2020@gmail.com</li>
-                    <li>Address:  100 Main St, Kurunagala</li>
+                    <li>Phone: 0713514360</li>
+                    <li>Phone: 0705514360</li>
+                    <li>Email: shinitharushika2020@gmail.com</li>
+                    <li>Address: 100 Main St, Kurunagala</li>
                 </ul>
-                
+
             </div>
             <div class="icons"><br>
                 <ul>
@@ -858,7 +866,7 @@ else{
         </div>
         <div class="copyright">
             <p>&copy; 2024 The Fitzone Fitness Center. All rights reserved.</p>
-          </div>
+        </div>
     </footer>
 
 
