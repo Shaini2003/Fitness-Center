@@ -90,7 +90,7 @@ span{
     box-shadow: 0 0 18px var(--main-color);
 }
 .logout-btn{
-    background-color: red;
+    background-color: #2980b9;
     padding: 1rem 2.8rem;
 
 }

@@ -24,25 +24,23 @@ session_start();
             <li><a href="#ABOUTUS">ABOUT US</a></li>
             <li><a href="#PRICING">PRICING</a></li>
             <li><a href="#TRAINERS">TRAINERS</a></li>
-            <li><a href="#BLOG">BLOG</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </ul>
-        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-        <div class="sub-menu-wrap" style="position: absolute;top: 100%;right: 10%;width: 320px;max-height: 0px;overflow: hidden;transition: max-height 0.5s;" id="subMenu">
-            <div class="sub-menu" style="background: #fff;padding: 20px;margin: 10px;">
-                <div class="user-info" style="display: flex;align-items: center;">
-                    <h2 style=" font-weight: 500;color: black;">Shaini Tharushika</h2>
-                </div>
-                <hr style="border: 0;height: 1px;width: 100%;background: #ccc;margin: 15px 0 10px;">
-                <a href="#" class="sub-menu-link" style="display: flex;align-items: center;text-decoration: none;color: #525252;margin: 12px 0;">
-                    <h1 style="width: 100%;color: black;">Log Out</h1>
-                    <span style="font-size: 22px;"></span>
-                </a>
-                <a href="#" class="sub-menu-link"style="display: flex;align-items: center;text-decoration: none;color: #525252;margin: 12px 0;">
-                    <h1 style="width: 100%;color: black;">Help & Support</h1>
-                    <span></span>
-                </a>
-            </div>
-        </div>
+            <li><a href="#BLOG">BLOG</a></li>
+            
+        </ul>&nbsp;&nbsp;
+        <?php
+      if(isset($_SESSION["username"])){
+   
+    echo '<h1> <a href="includes/logout.inc.php" class="nav-btn">Logout</a></h1>&nbsp;&nbsp;&nbsp;'; 
+    echo '<h1 style="float:right;color:#2980b9; font-family:Georgia,Times New Roman, Times, serif;">Hello</h1>';
+    echo '<h1 style="float:right;color:#2980b9; font-family:Georgia,Times New Roman, Times, serif;">&nbsp;'.$_SESSION["username"] . '</a></h1>';
+
+    
+   }
+   else{
+    echo '<a href="login.php" class="nav-btn">Login</a>';
+}
+?>
+
     </header>
 
     <!---Code for home page video slider-->
@@ -809,19 +807,63 @@ session_start();
     </center>
     <!---Create a add reviews section-->
     <center>
-        <a href="review.html" class="review-button">Add a review here</a><br><br><br>
+        <a href="review.php" class="review-button">Add a review here</a><br><br><br>
     </center><br>
     <!---Create a appoinment form-->
     <div class="submit-banner">
-        <form class="submit-content">
+        <form class="submit-content" action="index.php" method="post">
             <center>
                 <h2 style="font-size: 20px;">Sign Up for email and</h2>
                 <h1 style="font-size: 40px;">Get in on all the action</h1>
-                <input type="text" class="dash-input" placeholder="Enter Your Email"><br><br>
-                <button class="submit-btn">SUBMIT</button>
+                <input type="text"name="email" class="dash-input" placeholder="Enter Your Email"><br><br>
+                <button class="submit-btn"name="submit" type="submit">SUBMIT</button>
             </center>
         </form>
+        <?php
+$serverName = "localhost";
+$dbUsername = "Shaini_tharushika";
+$dbPassword = "shaini12@MT";
+$dbName = "fitness_center";
 
+$conn = mysqli_connect($serverName, $dbUsername,$dbPassword,$dbName);
+$email = $_POST['email'];
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email'])) {
+    $email = $_POST['email']; // Get email from POST data
+
+    // Validate email format
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        // Prepare the SQL statement
+        if ($stmt = $conn->prepare("INSERT INTO user_emails (email) VALUES (?)")) {
+            // Bind the email parameter to the prepared statement
+            $stmt->bind_param("s", $email);
+
+            // Execute the statement
+            if ($stmt->execute()) {
+                echo "<script>alert('Email added successfully!');showConfirmAndRedirect();</script>";
+            } else {
+                echo "Error: " . $stmt->error;
+            }
+
+            // Close the statement
+            $stmt->close();
+        } else {
+            echo "Error preparing statement: " . $conn->error;
+        }
+    } else {
+        echo "Invalid email format.";
+    }
+} else {
+    echo "Please submit an email.";
+}
+
+// Close the database connection at the end
+$conn->close();
+?>
     </div>
     <!---Create a footer-->
     <footer>
