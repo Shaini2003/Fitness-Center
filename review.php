@@ -24,12 +24,14 @@
             margin: 0;
             padding: 0;
             font-family: 'Poppins', sans-serif;
+           
         }
 
         body {
-            background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+        
             background-repeat: no-repeat;
             background-attachment: fixed;
+            background-color: black;
         }
 
         .progress-label-left {
@@ -54,19 +56,19 @@
         }
     </style>
 </head>
-<body>
-    <div class="alert alert-primary" role="alert">
-        <h1 class="text-center mt-2 mb-2">Product Rating/Review System</h1>
+<body style="background-color: black;">
+    <div class="alert alert-primary" role="alert"style="background-color: #2980b9;">
+        <h1 class="text-center mt-2 mb-2" style="font-weight: 700;">Rating & Reviewing</h1>
     </div>
     <div class="container">
 
     	<div class="card">
-    		<div class="card-header">Sample Product</div>
+    		<div class="card-header" style="font-size: 18px;"><a href="index.php">Fitzone Fitness Center</a></div>
     		<div class="card-body">
     			<div class="row">
                     <div class="col-sm-3 text-center">
-                        <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="phone" width="230">
-    					<button type="button" name="add_review" id="add_review" class="btn btn-primary form-control mt-3">Rate/Review This Product</button>
+                       
+    					<button type="button" name="add_review" id="add_review" class="btn btn-primary form-control mt-3" style="background-color: #2980b9;width: 200px;height: 80px;font-size: 18px;">Add a Review Here</button>
     				</div>
     				<div class="col-sm-4 text-center">
     					<h1 class="text-warning mt-4 mb-4">
@@ -127,7 +129,7 @@
     			</div>
     		</div>
     	</div>
-        <h3 class="mt-3 ml-4">Product Reviews:</h3>
+        <h3 class="mt-3 ml-4" style="color:#2980b9;font-weight:700;font-size:40px"> Reviews:</h3>
     	<div class="mt-3    " id="review_content">
 
         </div>

@@ -1,110 +1,122 @@
 <?php
 
-
 $serverName = "localhost";
 $dbUsername = "Shaini_tharushika";
 $dbPassword = "shaini12@MT";
 $dbName = "fitness_center";
 
-$conn = mysqli_connect($serverName, $dbUsername,$dbPassword,$dbName);
-if(isset($_POST["rating_data"]))
-{
+// Establishing MySQLi connection
+$conn = mysqli_connect($serverName, $dbUsername, $dbPassword, $dbName);
 
-	$data = array(
-		':user_name'		=>	$_POST["user_name"],
-		':user_rating'		=>	$_POST["rating_data"],
-		':user_review'		=>	$_POST["user_review"],
-		':datetime'			=>	time()
-	);
-
-	$query = "
-	INSERT INTO review_table 
-	(user_name, user_rating, user_review, datetime) 
-	VALUES (?,?,?,?);
-	";
-
-	$stmt = $conn->prepare($query);
-
-	$stmt->execute(array_values($data));
-
-	echo "Your Review & Rating Successfully Submitted";
-
+// Check if the connection is successful
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 
-if(isset($_POST["action"]))
-{
-	$average_rating = 0;
-	$total_review = 0;
-	$five_star_review = 0;
-	$four_star_review = 0;
-	$three_star_review = 0;
-	$two_star_review = 0;
-	$one_star_review = 0;
-	$total_user_rating = 0;
-	$review_content = array();
+// Check if the form data for review submission is set
+if (isset($_POST["rating_data"])) {
 
-	$query = "
-	SELECT * FROM review_table 
-	ORDER BY review_id DESC
-	";
+    // Prepare data to insert
+    $data = array(
+        'user_name'   => $_POST["user_name"],
+        'user_rating' => $_POST["rating_data"],
+        'user_review' => $_POST["user_review"],
+        'datetime'    => time()
+    );
 
-	$result = $conn->query($query, PDO::FETCH_ASSOC);
+    // SQL query to insert the review data into the database
+    $query = "
+    INSERT INTO review_table 
+    (user_name, user_rating, user_review, datetime) 
+    VALUES (?, ?, ?, ?);
+    ";
 
-	foreach($result as $row)
-	{
-		$review_content[] = array(
-			'user_name'		=>	$row["user_name"],
-			'user_review'	=>	$row["user_review"],
-			'rating'		=>	$row["user_rating"],
-			'datetime'		=>	date('l jS, F Y h:i:s A', $row["datetime"])
-		);
+    // Prepare and execute query
+    $stmt = mysqli_prepare($conn, $query);
+    
+    if ($stmt) {
+        // Bind parameters to the query
+        mysqli_stmt_bind_param($stmt, "ssis", $data['user_name'], $data['user_rating'], $data['user_review'], $data['datetime']);
 
-		if($row["user_rating"] == '5')
-		{
-			$five_star_review++;
-		}
+        // Execute the statement
+        if (mysqli_stmt_execute($stmt)) {
+            echo "Your Review & Rating Successfully Submitted";
+        } else {
+            echo "Error: " . mysqli_error($conn);
+        }
 
-		if($row["user_rating"] == '4')
-		{
-			$four_star_review++;
-		}
+        // Close the statement
+        mysqli_stmt_close($stmt);
+    } else {
+        echo "Error: " . mysqli_error($conn);
+    }
+}
 
-		if($row["user_rating"] == '3')
-		{
-			$three_star_review++;
-		}
+// If action is set to load data, fetch reviews and send as JSON
+if (isset($_POST["action"])) {
+    // Variables to store review statistics
+    $average_rating = 0;
+    $total_review = 0;
+    $five_star_review = 0;
+    $four_star_review = 0;
+    $three_star_review = 0;
+    $two_star_review = 0;
+    $one_star_review = 0;
+    $total_user_rating = 0;
+    $review_content = array();
 
-		if($row["user_rating"] == '2')
-		{
-			$two_star_review++;
-		}
+    // SQL query to fetch all reviews
+    $query = "SELECT * FROM review_table ORDER BY review_id DESC";
 
-		if($row["user_rating"] == '1')
-		{
-			$one_star_review++;
-		}
+    // Execute the query and get the result
+    $result = mysqli_query($conn, $query);
 
-		$total_review++;
+    // If there are results
+    if ($result) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            $review_content[] = array(
+                'user_name'   => $row["user_name"],
+                'user_review' => $row["user_review"],
+                'rating'      => $row["user_rating"],
+                'datetime'    => date('l jS, F Y h:i:s A', $row["datetime"])
+            );
 
-		$total_user_rating = $total_user_rating + $row["user_rating"];
+            // Count the ratings
+            switch ($row["user_rating"]) {
+                case 5: $five_star_review++; break;
+                case 4: $four_star_review++; break;
+                case 3: $three_star_review++; break;
+                case 2: $two_star_review++; break;
+                case 1: $one_star_review++; break;
+            }
 
-	}
+            // Calculate total review count and sum of ratings
+            $total_review++;
+            $total_user_rating += $row["user_rating"];
+        }
 
-	$average_rating = $total_user_rating / $total_review;
+        // Calculate average rating
+        if ($total_review > 0) {
+            $average_rating = $total_user_rating / $total_review;
+        }
 
-	$output = array(
-		'average_rating'	=>	number_format($average_rating, 1),
-		'total_review'		=>	$total_review,
-		'five_star_review'	=>	$five_star_review,
-		'four_star_review'	=>	$four_star_review,
-		'three_star_review'	=>	$three_star_review,
-		'two_star_review'	=>	$two_star_review,
-		'one_star_review'	=>	$one_star_review,
-		'review_data'		=>	$review_content
-	);
+        // Prepare the output data
+        $output = array(
+            'average_rating' => number_format($average_rating, 1),
+            'total_review'   => $total_review,
+            'five_star_review' => $five_star_review,
+            'four_star_review' => $four_star_review,
+            'three_star_review' => $three_star_review,
+            'two_star_review' => $two_star_review,
+            'one_star_review' => $one_star_review,
+            'review_data'    => $review_content
+        );
 
-	echo json_encode($output);
-
+        // Return the JSON data
+        echo json_encode($output);
+    } else {
+        echo json_encode(['error' => 'Failed to load reviews']);
+    }
 }
 
 ?>

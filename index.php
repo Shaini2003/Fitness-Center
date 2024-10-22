@@ -815,7 +815,7 @@ session_start();
             <center>
                 <h2 style="font-size: 20px;">Sign Up for email and</h2>
                 <h1 style="font-size: 40px;">Get in on all the action</h1>
-                <input type="email" name="email" class="dash-input" placeholder="Enter Your Email"><br><br>
+                <input type="email" name="email" class="dash-input" placeholder="Enter Your Email"required><br><br>
                 <button class="submit-btn"name="submit" type="submit">SUBMIT</button>
             </center>
         </form>
