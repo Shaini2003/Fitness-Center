@@ -813,9 +813,10 @@ session_start();
     <div class="submit-banner">
         <form class="submit-content" action="index.php" method="post">
             <center>
-                <h2 style="font-size: 20px;">Sign Up for email and</h2>
+                <h2 style="font-size: 20px;">Enter your email and FAQs</h2>
                 <h1 style="font-size: 40px;">Get in on all the action</h1>
                 <input type="email" name="email" class="dash-input" placeholder="Enter Your Email"required><br><br>
+                <input type="text" name="FAQ" class="dash-input" placeholder="Enter Your FAQ"required><br><br>
                 <button class="submit-btn"name="submit" type="submit">SUBMIT</button>
             </center>
         </form>
@@ -825,26 +826,28 @@ $dbUsername = "Shaini_tharushika";
 $dbPassword = "shaini12@MT";
 $dbName = "fitness_center";
 
-$conn = mysqli_connect($serverName, $dbUsername,$dbPassword,$dbName);
-$email = $_POST['email'];
+// Create a connection
+$conn = mysqli_connect($serverName, $dbUsername, $dbPassword, $dbName);
 
+// Check the connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email'])) {
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email']) && isset($_POST['FAQ'])) {
     $email = $_POST['email']; // Get email from POST data
+    $faq = $_POST['FAQ']; // Get FAQ from POST data
 
     // Validate email format
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        // Prepare the SQL statement
-        if ($stmt = $conn->prepare("INSERT INTO user_emails (email) VALUES (?)")) {
-            // Bind the email parameter to the prepared statement
-            $stmt->bind_param("s", $email);
+        // Prepare the SQL statement to insert both email and FAQ
+        if ($stmt = $conn->prepare("INSERT INTO user_emails (email, FAQ) VALUES (?, ?)")) {
+            // Bind the email and FAQ parameters to the prepared statement
+            $stmt->bind_param("ss", $email, $faq);
 
             // Execute the statement
             if ($stmt->execute()) {
-                echo "<script>alert('Email added successfully!');showConfirmAndRedirect();</script>";
+                echo "<script>alert('Email and FAQ added successfully!');showConfirmAndRedirect();</script>";
             } else {
                 echo "Error: " . $stmt->error;
             }
@@ -858,10 +861,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email'])) {
         echo "Invalid email format.";
     }
 } else {
-    echo "Please submit an email.";
+    echo "Please submit both an email and a FAQ.";
 }
 
-// Close the database connection at the end
+// Close the database connection
 $conn->close();
 ?>
     </div>

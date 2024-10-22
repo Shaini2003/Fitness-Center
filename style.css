@@ -835,7 +835,7 @@ i{
 .submit-banner{
     background-image: url("Media/submit\ banner.webp"); 
     background-size: cover;
-    height: 300px;
+    height: 350px;
     display: flex;
     align-items: center;
     color: #ffffff; 
