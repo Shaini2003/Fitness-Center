@@ -33,7 +33,46 @@
             </div></center>
         </div>
     </div>
-
+<div class="content">
+    <div class="cards">
+        <div class="card">
+            <div class="box">
+                <h1>2194</h1>
+                <h3>Users</h3>
+            </div>
+            <div class="icon-case">
+                <img src="group.png" style="width: 100px;height: 100px;">
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <h1>80</h1>
+                <h3>Classes</h3>
+            </div>
+            <div class="icon-case">
+                <img src="training.png" style="width: 100px;height: 100px;">
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <h1>546</h1>
+                <h3>Staff</h3>
+            </div>
+            <div class="icon-case">
+                <img src="teamwork.png"style="width: 100px;height: 100px;">
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <h1>200+</h1>
+                <h3>Reviews</h3>
+            </div>
+            <div class="icon-case">
+                <img src="reviews.png"style="width: 100px;height: 100px;">
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 </body>
