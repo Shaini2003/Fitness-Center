@@ -33,7 +33,7 @@ h1,h2{
     justify-content: center;
 
 }
-.slide-menu li{
+.slide-menu li {
     font-size: 24px;
     padding: 10px 40px;
     color: white;
@@ -41,8 +41,12 @@ h1,h2{
     align-items: center;
 
 }
+.slide-menu li a{
+    text-decoration: none;
+    color: white;
+}
 .slide-menu li:hover{
-    background: white;
+    background:black;
     color: #2980b9;
 }
 .container{
@@ -99,9 +103,10 @@ h1,h2{
     justify-content: space-around;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.container .content .cards .card .box{
-
+.container .content .cards .card:hover{
+    transform: translateY(-5px)scale(1.04);
 }
+
 .container .content .cards .card .box img{
     width: 30px;
     height: 30px;
