@@ -8,16 +8,14 @@
 </head>
 <body>
 <div class="container my-5">
-        <h2>List of Reviews</h2>
+        <h2 style="text-align: center;">List of FAQs</h2>
         <table class="table">
             <thead>
                 <tr>
-                    <th>Review_Id</th>
-                    <th>User_Name</th>
-                    <th>User_Rating</th>
-                    <th>User_Review</th>
-                    <th>Date Time</th>
-                    <th>Action</th>
+                    <th>Id</th>
+                    <th>Email</th>
+                    <th>FAQ</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -33,7 +31,7 @@
                 
                 }
 
-                $sql= "SELECT * FROM review_table";
+                $sql= "SELECT * FROM user_emails";
                 $result = $conn->query($sql);
 
                 if(!$result){
@@ -42,15 +40,11 @@
                 while($row =$result->fetch_assoc()){
                     echo "
                     <tr>
-                    <td>$row[review_id]</td>
-                    <td>$row[user_name]</td>
-                    <td>$row[user_rating]</td>
-                    <td>$row[user_review]</td>
-                    <td>$row[datetime]</td>
-                    <td>
-                        
-                        <a class='btn btn-danger btn-sm' href='/admin/review-delete.php?review_id=$row[review_id]'>Delete</a>
-                    </td>
+                    <td>$row[Id]</td>
+                    <td>$row[email]</td>
+                    <td>$row[FAQ]</td>
+                    
+                    
                 </tr> ";
                 }
                 ?>

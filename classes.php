@@ -7,14 +7,11 @@
     <link rel="stylesheet" href="class.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body>
     
-    <section class="services" id="SERVICES"><center>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="font-size: 17px;">&nbsp;
-            <button class="btn btn-outline-primary" type="submit" style="font-size: 20px;font-weight: 500;width: 140px;height: 40px;">Search</button>
-          </form></center><br>
+    <section class="services" id="SERVICES">
         <h2 class="heading">Our <span>Classes</span> </h2>
  
 
@@ -93,5 +90,6 @@
             </div>
         </div>
     </section>
+    
 </body>
 </html>

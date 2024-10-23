@@ -182,32 +182,32 @@ session_start();
             <div class="row">
                 <img src="Media/fitness programs.webp" alt="Fitness programs">
                 <h4>Wide Range of fitness programs</h4>
-                <center><a href="classes.php" class="list-btn">SEE MORE</a></center>
+                <center><a href="search.php" class="list-btn">SEE MORE</a></center>
             </div>
             <div class="row">
                 <img src="Media/equipments.jpeg" alt="fitness equipments">
                 <h4>State of the Art equipment</h4>
-                <center><a href="classes.php" class="list-btn">SEE MORE</a></center>
+                <center><a href="search.php" class="list-btn">SEE MORE</a></center>
             </div>
             <div class="row">
                 <img src="Media/training sessions.webp" alt="training sessions">
                 <h4>Personalized training Sessions</h4>
-                <center><a href="classes.php" class="list-btn">SEE MORE</a></center>
+                <center><a href="search.php" class="list-btn">SEE MORE</a></center>
             </div>
             <div class="row">
                 <img src="Media/group classes.jpeg" alt="group classes">
                 <h4>Group Classes</h4>
-                <center><a href="classes.php" class="list-btn">SEE MORE</a></center>
+                <center><a href="search.php" class="list-btn">SEE MORE</a></center>
             </div>
             <div class="row">
                 <img src="Media/nutrition.webp" alt="nutrition counselling">
                 <h4>Nutrition Counseling</h4>
-                <center><a href="classes.php" class="list-btn">SEE MORE</a></center>
+                <center><a href="search.php" class="list-btn">SEE MORE</a></center>
             </div>
             <div class="row">
                 <img src="Media/general training.webp" alt="general training">
                 <h4>General Training</h4>
-                <center><a href="classes.php" class="list-btn">SEE MORE</a></center>
+                <center><a href="search.php" class="list-btn">SEE MORE</a></center>
             </div>
         </div>
     </section>

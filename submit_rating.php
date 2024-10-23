@@ -36,7 +36,7 @@ if (isset($_POST["rating_data"])) {
     
     if ($stmt) {
         // Bind parameters to the query
-        mysqli_stmt_bind_param($stmt, "ssis", $data['user_name'], $data['user_rating'], $data['user_review'], $data['datetime']);
+        mysqli_stmt_bind_param($stmt, "ssss", $data['user_name'], $data['user_rating'], $data['user_review'], $data['datetime']);
 
         // Execute the statement
         if (mysqli_stmt_execute($stmt)) {
