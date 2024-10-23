@@ -17,7 +17,7 @@
         <ul>
             <li><a href="#">Dashboard</a></li>
             <li><a href="users.php">Users</a></li>
-            <li><a href="staff.php">Staff</a></li>
+            <li><a href="users.php">Staff</a></li>
             <li><a href="payment1.php">Class-Payments</a></li>
             <li><a href="payemt2.php">Membership-payments</a></li>
             <li><a href="FAQ.php">FAQs</a></li>
@@ -72,6 +72,42 @@
                     </div>
                     <div class="icon-case">
                         <img src="reviews.png" style="width: 100px;height: 100px;">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>90%</h1>
+                        <h3>Increase Profit</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="profit.png" style="width: 100px;height: 100px;">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>290+</h1>
+                        <h3>Page Views</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="web-traffic.png" style="width: 100px;height: 100px;">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>200+</h1>
+                        <h3>Total Payments</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="cashless-payment.png" style="width: 100px;height: 100px;">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>200+</h1>
+                        <h3>FAQs</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="faq.png" style="width: 100px;height: 100px;">
                     </div>
                 </div>
             </div>
