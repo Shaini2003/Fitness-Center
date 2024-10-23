@@ -11,18 +11,18 @@ if(isset($_POST["submit"])){
     $invalidEmail=invalidEmail($email);
     
     if ($emptyInput !== false){
-        header("Location:../login.php?error=emptyinput");
+        header("Location:../admin.php?error=emptyinput");
         exit();
     }
     if ($invalidUid !== false){
-        header("Location:../login.php?error=invaliduid");
+        header("Location:../admin.php?error=invaliduid");
         exit();
     }
     if($invalidEmail !== false){
-        header("Location:../login.php?error=invalidemail");
+        header("Location:../admin.php?error=invalidemail");
         exit();
     }
-   
+
     LoginUser($conn,$email,$pwd);
     }
     else{

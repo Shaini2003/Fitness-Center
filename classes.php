@@ -16,6 +16,8 @@
             <button class="btn btn-outline-primary" type="submit" style="font-size: 20px;font-weight: 500;width: 140px;height: 40px;">Search</button>
           </form></center><br>
         <h2 class="heading">Our <span>Classes</span> </h2>
+ 
+
         <div class="services-content">
             <div class="row">
                 <img src="Media/cardio class.webp" alt="Fitness programs">

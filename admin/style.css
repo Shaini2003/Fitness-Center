@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    min-height: 100vh;
+
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1,h2{
+    color: #444;
+}
+.slide-menu{
+    position: fixed;
+    background: #2980b9;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.slide-menu .brand-name{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.slide-menu li{
+    font-size: 24px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+.slide-menu li:hover{
+    background: white;
+    color: #2980b9;
+}
+.container{
+   position: absolute;
+   right: 0;
+   width: 80vw;
+   height: 100vh;
+   background: #f1f1f1;
+
+}
+.container .header{
+    
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 10vh;
+    float: right;
+    background: white;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.container .header .nav{
+    width: 90%;
+    margin-left: 400px;
+    display: flex;
+    align-items: center;
+}
+.image-case{
+    width: 40px;
+    height: 40px;
+    float: right;
+}

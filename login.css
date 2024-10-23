@@ -93,7 +93,14 @@ input {
 .staff:hover {
     background-color: #444;
 }
-
+.error{
+    color: red;
+    border: 1px solid red;
+    text-align: center;
+    padding: 12px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
 p {
     text-align: center;
     margin-top: 15px;
