@@ -19,7 +19,7 @@
             <li><a href="users.php">Users</a></li>
             <li><a href="users.php">Staff</a></li>
             <li><a href="payment1.php">Class-Payments</a></li>
-            <li><a href="payemt2.php">Membership-payments</a></li>
+            <li><a href="payemt2.php">Membership-plans</a></li>
             <li><a href="FAQ.php">FAQs</a></li>
             <li><a href="classes.php">Classes</a></li>
             <li><a href="reviews.php">Customer Reviews</a></li>

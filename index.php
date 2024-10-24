@@ -366,7 +366,7 @@ session_start();
                 <h2>Ladies-Annual Rs.55000</h2>
                 <h2>Couple-Annual Rs.85000</h2><br><br>
 
-                <center><a href="" class="member-btn">JOIN NOW</a></center>
+                <center><a href="payment.php" class="member-btn">JOIN NOW</a></center>
             </div>
             <div class="rows">
                 <h3>Gold Membership</h3>
@@ -376,7 +376,7 @@ session_start();
                 <h2>Ladies-Annual Rs.48000</h2>
                 <br><br><br>
 
-                <center><a href="" class="member-btn">JOIN NOW</a></center>
+                <center><a href="payment.php" class="member-btn">JOIN NOW</a></center>
             </div>
             <div class="rows">
                 <h3>Silver Membership</h3>
@@ -386,7 +386,7 @@ session_start();
                 <h2>Individual-3 months Rs.35000</h2>
                 <h2>Individual-1 month Rs.15000</h2><br><br>
 
-                <center><a href="" class="member-btn">JOIN NOW</a></center>
+                <center><a href="payment.php" class="member-btn">JOIN NOW</a></center>
             </div>
         </div>
     </section>
