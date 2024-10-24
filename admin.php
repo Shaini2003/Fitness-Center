@@ -16,7 +16,7 @@
             
             <h1 style="text-align: center;font-weight:900;color: white;">Admin Login</h1>
         
-            <form action ="admin/index.php" method="post" ><div style="text-align: center;">
+            <form action ="admin/home.php" method="post" ><div style="text-align: center;">
                 <label for="email" style="font-size: 18px;text-align:left;color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Address:</label>
                 <input type="email" id="email" name="email" placeholder="Email"><br><br>
                 <label for="password" style="font-size: 18px;text-align:left;color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>

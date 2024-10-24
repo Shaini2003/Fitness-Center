@@ -76,7 +76,7 @@ if (isset($_GET['delete'])) {
     <div class="container">
         <div class="admin-product-form-container">
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
-                <h3>Add a New Class</h3>
+                <h3>Add a New Class or Sevice</h3>
                 <input type="text" placeholder="Enter class name" name="class_name" class="box" required>
                 <input type="number" placeholder="Enter class price" name="class_price" class="box" required>
                 <input type="file" accept="image/png, image/jpeg, image/jpg" name="class_image" class="box" required>
