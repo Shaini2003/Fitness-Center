@@ -1,4 +1,11 @@
 <?php
+session_start(); // Start the session
+
+// Check if user is logged in
+if(isset($_POST["submit"])){
+  $email = $_POST["email"];
+  $pwd = $_POST["password"];}
+
 $serverName = "localhost";
 $dbUsername = "Shaini_tharushika";
 $dbPassword = "shaini12@MT";
@@ -29,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $number = $_POST["card_number"];
     $MM = $_POST["MM"];
     $YY = $_POST["YY"];
-    $CCV = $_POST["CCV"]; // Correctly referenced CCV
+    $CCV = $_POST["CCV"];
     $first_name = $_POST["First_Name"];
     $last_name = $_POST["Last_Name"];
 
@@ -42,10 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->bind_param("ssssssss", $class_name, $price, $number, $MM, $YY, $CCV, $first_name, $last_name);
 
         if ($stmt->execute()) {
-            $successMessage = "Payment successfully added";
-            header("location: classes.php");
-             exit;
-
+            $successMessage = "Payment successfully added.";
             // Reset form values
             $class_name = "";
             $price = "";
@@ -62,7 +66,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->close();
     }
 }
-
 ?>
 
 <!DOCTYPE html>
