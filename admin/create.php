@@ -65,9 +65,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: black;color:white;">
     <div class="container my-5">
-        <h2>New Client</h2>
+        <h2 style="font-size: 40px;font-weight: 600;">New Client</h2><br>
         <?php
         if(!empty($errorMessage)){
             echo "
@@ -80,31 +80,31 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         ?>
         <form method="post">
             <div class="row mb-3">
-                <label class="col-sm-3 col-form-label">Name</label>
+                <label class="col-sm-3 col-form-label" style="font-size: 20px;">Name</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="name" value="<?php echo $name ?>">
                 </div>
             </div>
             <div class="row mb-3">
-                <label class="col-sm-3 col-form-label">Phone</label>
+                <label class="col-sm-3 col-form-label"  style="font-size: 20px;">Phone</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="phone" value="<?php echo $phone ?>">
                 </div>
             </div>
             <div class="row mb-3">
-                <label class="col-sm-3 col-form-label">Email</label>
+                <label class="col-sm-3 col-form-label"  style="font-size: 20px;">Email</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="email" value="<?php echo $email ?>">
                 </div>
             </div>
             <div class="row mb-3">
-                <label class="col-sm-3 col-form-label">Password</label>
+                <label class="col-sm-3 col-form-label"  style="font-size: 20px;">Password</label>
                 <div class="col-sm-6">
                     <input type="password" class="form-control" name="password" value="<?php echo $password ?>">
                 </div>
             </div>
             <div class="row mb-3">
-                <label class="col-sm-3 col-form-label">userType</label>
+                <label class="col-sm-3 col-form-label"  style="font-size: 20px;">userType</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="userType" value="<?php echo $userType ?>">
                 </div>

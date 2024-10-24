@@ -860,9 +860,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email']) && isset($_PO
     } else {
         echo "Invalid email format.";
     }
-} else {
-    echo "Please submit both an email and a FAQ.";
-}
+} 
 
 // Close the database connection
 $conn->close();

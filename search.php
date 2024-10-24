@@ -6,9 +6,9 @@
     <title>Search Classes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body style="background-color: black;color: white;">
 <div class="container my-5">
-    <h2>Search Classes</h2>
+    <h2 style="text-align: center;font-size: 40px;">Search Classes</h2>
     <center>
         <form class="d-flex" role="search" action="" method="GET">
             <input class="form-control me-2" type="search" name="query" placeholder="Search by Class Name" aria-label="Search" style="font-size: 17px;">
@@ -16,7 +16,7 @@
         </form>
     </center><br>
     <table class="table">
-        <thead>
+        <thead style="font-size: 20px;">
             <tr>
                 <th>Class ID</th>
                 <th>Class Name</th>
@@ -24,7 +24,7 @@
                 <th>Class Image</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody style="font-size: 18px;">
             <?php
             $serverName = "localhost";
             $dbUsername = "Shaini_tharushika";

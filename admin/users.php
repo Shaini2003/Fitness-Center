@@ -6,10 +6,10 @@
     <title>Users</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body style="background-color: black;color: white;">
     <div class="container my-5">
         <h2>List of Users</h2>
-        <a class="btn btn-primary" href="/admin/create.php" role="button">New User</a><br>
+        <a class="btn btn-primary" href="/admin/create.php" role="button">New User</a><br><br>
         <table class="table">
             <thead>
                 <tr>

@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body style="background-color: black;color: white;">
 <div class="container my-5">
         <h2>List of Reviews</h2>
         <table class="table">

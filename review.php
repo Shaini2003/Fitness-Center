@@ -62,7 +62,7 @@
     </div>
     <div class="container">
 
-    	<div class="card">
+    	<div class="card" style="background-color: black;color: white;">
     		<div class="card-header" style="font-size: 18px;"><a href="index.php">Fitzone Fitness Center</a></div>
     		<div class="card-body">
     			<div class="row">

@@ -70,7 +70,7 @@ if (isset($_POST['update_class'])) {
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="class.css">
 </head>
-<body>
+<body style="background-color: black;">
 
 <?php
 if (isset($message)) {
@@ -93,8 +93,8 @@ if (isset($message)) {
             <input type="text" class="box" name="class_name" value="<?php echo htmlspecialchars($row['name']); ?>" placeholder="Enter the class name" required>
             <input type="number" min="0" class="box" name="class_price" value="<?php echo htmlspecialchars($row['price']); ?>" placeholder="Enter the class price" required>
             <input type="file" class="box" name="class_image" accept="image/png, image/jpeg, image/jpg">
-            <input type="submit" value="Update Class" name="update_class" class="btn">
-            <a href="classes.php" class="btn">Go Back!</a>
+            <input type="submit" value="Update Class" name="update_class" class="btn"style="background-color:#0984e3;">
+            <a href="classes.php" class="btn"style="background-color:#0984e3;">Go Back!</a>
         </form>
 
         <?php } else { ?>

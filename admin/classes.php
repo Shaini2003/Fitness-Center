@@ -63,7 +63,7 @@ if (isset($_GET['delete'])) {
     <!-- Custom CSS File Link -->
     <link rel="stylesheet" href="class.css">
 </head>
-<body>
+<body style="background-color: black;">
 
     <?php
     if (isset($message)) {
@@ -80,7 +80,7 @@ if (isset($_GET['delete'])) {
                 <input type="text" placeholder="Enter class name" name="class_name" class="box" required>
                 <input type="number" placeholder="Enter class price" name="class_price" class="box" required>
                 <input type="file" accept="image/png, image/jpeg, image/jpg" name="class_image" class="box" required>
-                <input type="submit" class="btn" name="add_class" value="Add Class">
+                <input type="submit" class="btn" name="add_class" value="Add Class" style="background-color:#0984e3;">
             </form>
         </div>
 
@@ -88,7 +88,7 @@ if (isset($_GET['delete'])) {
         $select = mysqli_query($conn, "SELECT * FROM classes");
         ?>
         <div class="product-display">
-            <table class="product-display-table">
+            <table class="product-display-table" style="background-color: white;">
                 <thead>
                     <tr>
                         <th>Class Image</th>
@@ -106,7 +106,7 @@ if (isset($_GET['delete'])) {
                         <td><?php echo htmlspecialchars($row['name']); ?></td>
                         <td>$<?php echo htmlspecialchars($row['price']); ?>/-</td>
                         <td>
-                            <a href="admin_update.php?edit=<?php echo $row['id']; ?>" class="btn">
+                            <a href="admin_update.php?edit=<?php echo $row['id']; ?>" class="btn"style="background-color:#0984e3;">
                                 <i class="fas fa-edit"></i> Edit
                             </a>
                             <a href="classes.php?delete=<?php echo $row['id']; ?>" class="btn">
