@@ -1,9 +1,10 @@
 <?php
 
 $serverName = "localhost";
-$dbUsername = "Shaini_tharushika";
-$dbPassword = "shaini12@MT";
+$dbUsername = "root";
+$dbPassword ="";
 $dbName = "fitness_center";
+
 
 // Establishing MySQLi connection
 $conn = mysqli_connect($serverName, $dbUsername, $dbPassword, $dbName);
@@ -35,7 +36,7 @@ if (isset($_POST['update_class'])) {
         // Execute the statement
         if ($stmt->execute()) {
             $message[] = 'Class updated successfully.';
-            header('location:classes.php');
+            header('<location: /admin/classes.php');
             exit;
         } else {
             $message[] = 'Could not update the class.';
@@ -50,7 +51,7 @@ if (isset($_POST['update_class'])) {
         // Execute the statement
         if ($stmt->execute()) {
             $message[] = 'Class updated successfully.';
-            header('location:admin_page.php');
+            header('location:/admin/classes.php');
             exit;
         } else {
             $message[] = 'Could not update the class.';

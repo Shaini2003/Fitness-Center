@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="signup.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function enableSubmitBtn(){
+            document.getElementById("mySubmitBtn").disabled = false;
+        }
+    </script>
 </head>
 
 <body style="background-image: url(Media/background\ image.jpg);background-size: cover;background-position: center center;">
@@ -35,8 +41,9 @@
                 <input type="password" id="confirm-password" name="confirm-password" style="width: 90%;" placeholder="Repeat Password">
                 <label for="type" style="font-size: 18px;text-align: left;font-weight: 600;color: white;">User Type:</label>
                 <input type="text" id="type" name="type" style="width: 90%;" placeholder="User Type">
+                <div class="g-recaptcha" data-sitekey="6LcxGWsqAAAAAF5blwh39208f0TIpNDtNQUcc323" data-callback="enableSubmitBtn"></div>
                 <center>
-                    <button name="submit" type="submit" style="color: white;" class="button">Register</button>
+                    <button name="submit" type="submit" id="mySubmitBtn" disabled="disabled" style="color: white;" class="button">Register</button>
                     <p style="font-weight: bolder;color: white;">Already have an account? &nbsp;<a href="Login.php" style="color:white;font-weight: bold; text-decoration: none;">Login</a></p>
 
                 </center>

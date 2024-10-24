@@ -21,7 +21,7 @@ session_start();
         <ul class="navbar">
             <li><a href="#HOME">HOME</a></li>
             <li><a href="#SERVICES">SERVICES</a></li>
-            <li><a href="#ABOUTUS">ABOUT US</a></li>
+            <li><a href="#ABOUTUS">ABOUTUS</a></li>
             <li><a href="#PRICING">PRICING</a></li>
             <li><a href="#TRAINERS">TRAINERS</a></li>
             <li><a href="#BLOG">BLOG</a></li>
@@ -822,9 +822,10 @@ session_start();
         </form>
         <?php
 $serverName = "localhost";
-$dbUsername = "Shaini_tharushika";
-$dbPassword = "shaini12@MT";
+$dbUsername = "root";
+$dbPassword ="";
 $dbName = "fitness_center";
+
 
 // Create a connection
 $conn = mysqli_connect($serverName, $dbUsername, $dbPassword, $dbName);

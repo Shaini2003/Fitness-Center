@@ -38,9 +38,10 @@
             <tbody>
                 <?php
                 $serverName = "localhost";
-                $dbUsername = "Shaini_tharushika";
-                $dbPassword = "shaini12@MT";
+                $dbUsername = "root";
+                $dbPassword ="";
                 $dbName = "fitness_center";
+                
 
                 $conn = mysqli_connect($serverName, $dbUsername,$dbPassword,$dbName);
                 if(!$conn){
@@ -89,10 +90,11 @@
         </thead>
         <tbody style="font-size: 18px;">
             <?php
-            $serverName = "localhost";
-            $dbUsername = "Shaini_tharushika";
-            $dbPassword = "shaini12@MT";
-            $dbName = "fitness_center";
+           $serverName = "localhost";
+           $dbUsername = "root";
+           $dbPassword ="";
+           $dbName = "fitness_center";
+           
 
             $conn = mysqli_connect($serverName, $dbUsername,$dbPassword,$dbName);
             if(!$conn){
@@ -136,9 +138,10 @@
             <tbody>
                 <?php
                 $serverName = "localhost";
-                $dbUsername = "Shaini_tharushika";
-                $dbPassword = "shaini12@MT";
+                $dbUsername = "root";
+                $dbPassword ="";
                 $dbName = "fitness_center";
+                
 
                 $conn = mysqli_connect($serverName, $dbUsername,$dbPassword,$dbName);
                 if(!$conn){
@@ -186,9 +189,10 @@
             <tbody>
                 <?php
                 $serverName = "localhost";
-                $dbUsername = "Shaini_tharushika";
-                $dbPassword = "shaini12@MT";
+                $dbUsername = "root";
+                $dbPassword ="";
                 $dbName = "fitness_center";
+                
 
                 $conn = mysqli_connect($serverName, $dbUsername,$dbPassword,$dbName);
                 if(!$conn){

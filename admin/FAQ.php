@@ -21,9 +21,10 @@
             <tbody>
                 <?php
                 $serverName = "localhost";
-                $dbUsername = "Shaini_tharushika";
-                $dbPassword = "shaini12@MT";
+                $dbUsername = "root";
+                $dbPassword ="";
                 $dbName = "fitness_center";
+                
 
                 $conn = mysqli_connect($serverName, $dbUsername,$dbPassword,$dbName);
                 if(!$conn){
