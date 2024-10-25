@@ -8,8 +8,7 @@
 </head>
 <body style="background-color: black;color: white;">
     <div class="container my-5">
-        <h2>List of Users</h2>
-        <a class="btn btn-primary" href="/admin/create.php" role="button">New User</a><br><br>
+        <h1 style="text-align: center;">User Details</h1><br>
         <table class="table">
             <thead>
                 <tr>
@@ -52,7 +51,7 @@
                     <td>$row[usersPwd]</td>
                     <td>$row[userType]</td>
                     <td>
-                        <a class='btn btn-primary btn-sm'href='/admin/edit.php?usersId=$row[usersId]'>Edit</a>
+                        
                         <a class='btn btn-danger btn-sm'href='/admin/delete.php?usersId=$row[usersId]'>Delete</a>
                     </td>
                 </tr> ";

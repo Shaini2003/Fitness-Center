@@ -17,7 +17,7 @@
         <ul>
             <li><a href="#">Dashboard</a></li>
             <li><a href="users.php">Users</a></li>
-            <li><a href="users.php">Staff</a></li>
+            <li><a href="staffmembers.php">Staff</a></li>
             <li><a href="payment.php">Class-Payments</a></li>
             <li><a href="membership.php">Membership-plans</a></li>
             <li><a href="FAQ.php">FAQs</a></li>

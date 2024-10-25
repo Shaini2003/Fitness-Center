@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         }
        
         //add user to the database
-        $sql="INSERT INTO users (usersName,usersPhone,usersEmail,usersPwd,userType) " .
+        $sql="INSERT INTO staff (usersName,usersPhone,usersEmail,usersPwd,userType) " .
         "VALUES ('$name','$phone','$email','$password','$userType')";
         $result=$conn->query($sql);
 
@@ -47,7 +47,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
        $userType="";
 
        $successMessage="User added Successfully";
-       header("location: /admin/users.php");
+       header("location: /admin/staffmembers.php");
        exit;
 
     }while(false);

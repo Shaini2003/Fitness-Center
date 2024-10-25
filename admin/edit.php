@@ -86,7 +86,7 @@ else {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: black;color: white;">
     <div class="container my-5">
         <h2>New Client</h2>
         <?php
