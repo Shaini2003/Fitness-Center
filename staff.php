@@ -16,14 +16,14 @@
             
             <h1 style="text-align: center;font-weight:900;color: white;">Staff Login</h1>
         
-            <form action ="includes/login.inc.php" method="post" ><div style="text-align: center;">
+            <form action ="staff-login.inc.php" method="post" ><div style="text-align: center;">
                 <label for="email" style="font-size: 18px;text-align:left;color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Address:</label>
                 <input type="email" id="email" name="email" placeholder="Email"><br><br>
                 <label for="password" style="font-size: 18px;text-align:left;color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
                 <input type="password" id="password" name="password" placeholder="Password">
                 <p style="font-weight: bolder;font-size: 18px;color: white;">Forget Password?</p><center>
                 
-                    <a href="staff-login.php" class="button">LOGIN</a></center></div>
+                <button name="submit" type="submit"class="button">LOGIN</button></center></div>
             </form>
         
             <p style="font-weight: bolder;color: white;">Don't have an account? &nbsp;<a href="createAccount.php" style="color:black;font-weight: bold;color: white;">Sign Up</a></p>

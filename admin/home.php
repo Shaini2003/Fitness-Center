@@ -1,3 +1,16 @@
+<?php
+session_start(); 
+
+
+if (!isset($_SESSION['username'])) {
+    header("Location: admin.php"); 
+    exit();
+}
+
+
+$username = $_SESSION['username'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +26,7 @@
     <div class="slide-menu">
         <div class="brand-name">
             <h1><a href="http://localhost:3000/index.php#">FitZone</a></h1>
+            
         </div>
         <ul>
             <li><a href="#">Dashboard</a></li>
@@ -28,6 +42,7 @@
     <div class="container">
         <div class="header">
             <div class="nav">
+            <h4>Welcome, <?php echo htmlspecialchars($username); ?>!</h4>
                 <center>
                     <div class="user">
                         <img src="user-1.png" class="image-case">
