@@ -30,9 +30,9 @@ if (isset($_POST['add_class'])) {
 
         // Execute the statement
         if ($stmt->execute()) {
-            $message[] = 'New product added successfully';
+            $message[] = 'New class added successfully';
         } else {
-            $message[] = 'Could not add the product.';
+            $message[] = 'Could not add the class.';
         }
 
         $stmt->close();
